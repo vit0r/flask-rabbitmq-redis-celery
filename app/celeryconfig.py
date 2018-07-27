@@ -1,5 +1,7 @@
-CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672/'
-CELERY_BACKEND = 'redis://localhost:6379/0'
+celery_broker_url = 'amqp://guest:guest@localhost:5672/'
+celery_backend = 'redis://localhost:6379/0'
+broker_url = 'amqp://guest:guest@localhost:5672/'
+result_backend = 'redis://localhost:6379/0'
 task_serializer = 'json'
 result_serializer = 'json'
 accept_content = ['json']
