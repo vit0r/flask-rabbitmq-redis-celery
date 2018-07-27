@@ -17,3 +17,6 @@ def create_container_task(name):
     print('PROCESSING')
     time.sleep(3)
     return 'CONTAINER {} CREATED WITOUT ERRORS'.format(name)
+
+#celery -A app.main.celery worker --loglevel=info
+#docker run -d --hostname flask-rabbit --name flask-task-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management
